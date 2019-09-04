@@ -12,6 +12,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+	private int Number;
 	//  TODO: deklarasikan variabel di sini
 
 	@Override
@@ -23,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
 	// TODO: generate angka random di sini
 	private void initRandomNumber() {
-
+	Random random = new Random();
+	Number = random.nextInt(100) + 1;
 	}
 
 	public void handleGuess(View view) {
